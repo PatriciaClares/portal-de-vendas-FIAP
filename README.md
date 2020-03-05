@@ -15,4 +15,4 @@ Projeto desenvolvido para uma avaliação de Hybrid Mobile.
 </ul>
 
 ## Mobile
-![Estatistica](https://github.com/PatriciaClares/portal-de-vendas-FIAP/blob/master/statics/Estatistica.PNG)  ![Main](https://github.com/PatriciaClares/portal-de-vendas-FIAP/blob/master/statics/Main.PNG)
+![Main](https://github.com/PatriciaClares/portal-de-vendas-FIAP/blob/master/statics/Main.PNG) ![Estatistica](https://github.com/PatriciaClares/portal-de-vendas-FIAP/blob/master/statics/Estatistica.PNG)  
