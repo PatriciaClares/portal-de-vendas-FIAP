@@ -1,15 +1,18 @@
-<h2>Portal de Vendas</h2>
+## Portal de Vendas
 
 Projeto desenvolvido para uma avaliação de Hybrid Mobile.
 
-<h2>Desenvolvedor</h2>
+## Desenvolvedor
 
 <ul>
     <li><a href="https://github.com/PatriciaClares"> Patricia Clares</a></li>
 </ul>
 
-<h2>Técnologias</h2>
+## Técnologias
 <ul>
     <li>Android Studio</li>
     <li>Kotlin</li>
 </ul>
+
+## Mobile
+![Estatistica](https://github.com/PatriciaClares/portal-de-vendas-FIAP/blob/master/statics/Estatistica.PNG)  ![Main](https://github.com/PatriciaClares/portal-de-vendas-FIAP/blob/master/statics/Main.PNG)
