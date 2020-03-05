@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         var dadosAmazon = dadosPersistidos.getInt("amazon",0)
         var dadosEbay = dadosPersistidos.getInt("ebay",0)
         var dadosKabum = dadosPersistidos.getInt("kabum",0)
-        var dadosWish = dadosPersistidos.getInt("dadosWish",0)
+        var dadosSubmarino = dadosPersistidos.getInt("submarino",0)
         var dadosAliexpress = dadosPersistidos.getInt("aliexpress",0)
 
         mercadolivre.setOnClickListener {
@@ -58,11 +58,11 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        wish.setOnClickListener {
+        submarino.setOnClickListener {
 
-            dadosPersistidos.edit().putInt("wish", dadosWish+1)
+            dadosPersistidos.edit().putInt("submarino", dadosSubmarino+1)
             var intent = Intent(this, WebView::class.java)
-            intent.putExtra("url", "https://www.wish.com/")
+            intent.putExtra("url", "https://www.submarino.com.br/")
             startActivity(intent)
 
         }
@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("dadosKabum", dadosKabum)
             intent.putExtra("dadosAliexpress", dadosAliexpress)
             intent.putExtra("dadosAmazon", dadosAmazon)
-            intent.putExtra("dadosWish", dadosWish)
+            intent.putExtra("dadosSubmarino", dadosSubmarino)
             startActivity(intent)
         }
     }

@@ -17,14 +17,14 @@
         app:srcCompat="@drawable/mercado_livre" />
 
     <ImageView
-        android:id="@+id/wish"
+        android:id="@+id/submarino"
         android:layout_width="139dp"
         android:layout_height="87dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="28dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ebay"
-        app:srcCompat="@drawable/wish" />
+        app:srcCompat="@drawable/submarino" />
 
     <ImageView
         android:id="@+id/aliexpress"
@@ -34,7 +34,7 @@
         android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.222"
-        app:layout_constraintStart_toEndOf="@+id/wish"
+        app:layout_constraintStart_toEndOf="@+id/submarino"
         app:layout_constraintTop_toBottomOf="@+id/kabum"
         app:srcCompat="@drawable/aliexpress" />
 
