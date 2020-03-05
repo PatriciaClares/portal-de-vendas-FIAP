@@ -78,13 +78,6 @@ class MainActivity : AppCompatActivity() {
 
         btSobre.setOnClickListener{
             var intent = Intent(this, Sobre::class.java)
-            intent.putExtra("dados",
-                "Mercado Livre: " + dadosMercadoLivre + "\n\n"
-                        + "Ebay: " + dadosEbay + "\n\n"
-                        + "Kabum: " + dadosKabum + "\n\n"
-                        + "Aliexpress: " + dadosAliexpress + "\n\n"
-                        + "Amazon: " + dadosAmazon + "\n\n"
-                        + "Submarino: " + dadosSubmarino)
             startActivity(intent)
 
         }
