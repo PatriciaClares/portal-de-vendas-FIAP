@@ -14,10 +14,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        mercadoLivre.setOnClickListener { view: View? ->
+        mercadolivre.setOnClickListener { view: View? ->
 
             var intent = Intent(this, WebView::class.java)
             intent.putExtra("url", "https://www.mercadolivre.com.br/")
+            startActivity(intent)
+        }
+
+        amazon.setOnClickListener { view: View? ->
+
+            var intent = Intent(this, WebView::class.java)
+            intent.putExtra("url", "https://www.amazon.com.br/")
             startActivity(intent)
         }
     }
