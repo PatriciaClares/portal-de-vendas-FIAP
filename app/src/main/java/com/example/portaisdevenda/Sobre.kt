@@ -3,7 +3,7 @@ package com.example.portaisdevenda
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class sobre : AppCompatActivity() {
+class Sobre : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
