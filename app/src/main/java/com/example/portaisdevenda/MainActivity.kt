@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
 
             dadosPersistidos.edit().putInt("wish", dadosWish+1)
             var intent = Intent(this, WebView::class.java)
-            intent.putExtra("url", "https://www.wish.com/search/trending?from_ad=goog_kw_search&campaign_id=1709509819&gclid=Cj0KCQiAwP3yBRCkARIsAABGiPrmtVjz4psR9kzIhBhMVCYjaxessbEyPnGJhvtLaTJz3zXWBVe_4GsaAi6WEALw_wcB&hide_login_modal=true")
+            intent.putExtra("url", "https://www.wish.com/")
             startActivity(intent)
 
         }
@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
 
             dadosPersistidos.edit().putInt("aliexpress", dadosAliexpress+1)
             var intent = Intent(this, WebView::class.java)
-            intent.putExtra("url", "https://pt.aliexpress.com/?src=google&albch=fbrnd&acnt=304-410-9721&isdl=y&aff_short_key=UneMJZVf&albcp=2038891400&albag=72803962300&slnk=&trgt=kwd-14802285088&plac=&crea=367675400387&netw=g&device=c&mtctp=e&memo1=&albbt=Google_7_fbrnd&aff_platform=google&albagn=888888&gclid=Cj0KCQiAwP3yBRCkARIsAABGiPpPD9krtTWMCqZTaY0KHZMY3aUo26XP3oAFbE3N5U1vimb4LaBRxN8aAh7OEALw_wcB")
+            intent.putExtra("url", "https://pt.aliexpress.com/")
             startActivity(intent)
 
         }
