@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         mercadolivre.setOnClickListener {
 
-            dadosPersistidos.edit().putInt("mercadoLivre", dadosMercadoLivre+1)
+            dadosPersistidos.edit().putInt("mercadoLivre", dadosMercadoLivre+1).apply()
             var intent = Intent(this, WebView::class.java)
             intent.putExtra("url", "https://www.mercadolivre.com.br/")
             startActivity(intent)
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
         amazon.setOnClickListener {
 
-            dadosPersistidos.edit().putInt("amazon", dadosAmazon+1)
+            dadosPersistidos.edit().putInt("amazon", dadosAmazon+1).apply()
             var intent = Intent(this, WebView::class.java)
             intent.putExtra("url", "https://www.amazon.com.br/")
             startActivity(intent)
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
 
         ebay.setOnClickListener {
 
-            dadosPersistidos.edit().putInt("ebay", dadosEbay+1)
+            dadosPersistidos.edit().putInt("ebay", dadosEbay+1).apply()
             var intent = Intent(this, WebView::class.java)
             intent.putExtra("url", "https://www.ebay.com/")
             startActivity(intent)
@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
 
         kabum.setOnClickListener {
 
-            dadosPersistidos.edit().putInt("kabum", dadosKabum+1)
+            dadosPersistidos.edit().putInt("kabum", dadosKabum+1).apply()
             var intent = Intent(this, WebView::class.java)
             intent.putExtra("url", "https://www.kabum.com.br/")
             startActivity(intent)
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
 
         submarino.setOnClickListener {
 
-            dadosPersistidos.edit().putInt("submarino", dadosSubmarino+1)
+            dadosPersistidos.edit().putInt("submarino", dadosSubmarino+1).apply()
             var intent = Intent(this, WebView::class.java)
             intent.putExtra("url", "https://www.submarino.com.br/")
             startActivity(intent)
@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
 
         aliexpress.setOnClickListener {
 
-            dadosPersistidos.edit().putInt("aliexpress", dadosAliexpress+1)
+            dadosPersistidos.edit().putInt("aliexpress", dadosAliexpress+1).apply()
             var intent = Intent(this, WebView::class.java)
             intent.putExtra("url", "https://pt.aliexpress.com/")
             startActivity(intent)
@@ -78,13 +78,15 @@ class MainActivity : AppCompatActivity() {
 
         btSobre.setOnClickListener{
             var intent = Intent(this, Sobre::class.java)
-            intent.putExtra("dadosMercadoLivre", dadosMercadoLivre)
-            intent.putExtra("dadosEbay", dadosEbay)
-            intent.putExtra("dadosKabum", dadosKabum)
-            intent.putExtra("dadosAliexpress", dadosAliexpress)
-            intent.putExtra("dadosAmazon", dadosAmazon)
-            intent.putExtra("dadosSubmarino", dadosSubmarino)
+            intent.putExtra("dados",
+                "Mercado Livre: " + dadosMercadoLivre + "\n\n"
+                        + "Ebay: " + dadosEbay + "\n\n"
+                        + "Kabum: " + dadosKabum + "\n\n"
+                        + "Aliexpress: " + dadosAliexpress + "\n\n"
+                        + "Amazon: " + dadosAmazon + "\n\n"
+                        + "Submarino: " + dadosSubmarino)
             startActivity(intent)
+
         }
     }
 }
