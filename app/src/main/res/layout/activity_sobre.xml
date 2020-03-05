@@ -7,10 +7,31 @@
     tools:context=".Sobre">
 
     <TextView
+        android:id="@+id/txtAliexpress"
+        android:layout_width="179dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtKabum" />
+
+    <TextView
+        android:id="@+id/txtKabum"
+        android:layout_width="179dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEBay" />
+
+    <TextView
         android:id="@+id/textView"
         android:layout_width="156dp"
         android:layout_height="27dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="32dp"
         android:text="Portal de vendas"
         android:textAlignment="center"
         android:textColor="#000000"
@@ -24,7 +45,7 @@
         android:id="@+id/aluno"
         android:layout_width="156dp"
         android:layout_height="27dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="32dp"
         android:text="Patricia Clares"
         android:textAlignment="center"
         android:textColor="#020202"
@@ -33,6 +54,16 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/txtMercadolivre"
+        android:layout_width="179dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="64dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aluno" />
 
     <Button
         android:id="@+id/btEstatistica"
@@ -43,74 +74,40 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtWish"
-        app:layout_constraintVertical_bias="0.243"
+        app:layout_constraintVertical_bias="0.073"
         tools:background="#000000" />
-
-    <TextView
-        android:id="@+id/txtMercadolivre"
-        android:layout_width="179dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="56dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aluno" />
 
     <TextView
         android:id="@+id/txtEBay"
         android:layout_width="179dp"
         android:layout_height="39dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtMercadolivre" />
-
-    <TextView
-        android:id="@+id/txtKabum"
-        android:layout_width="179dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="20dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtEBay" />
-
-    <TextView
-        android:id="@+id/txtAliexpress"
-        android:layout_width="179dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="20dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtKabum" />
-
-    <TextView
-        android:id="@+id/txtAmazon"
-        android:layout_width="179dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="20dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAliexpress" />
 
     <TextView
         android:id="@+id/txtWish"
         android:layout_width="179dp"
         android:layout_height="39dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtAmazon" />
+
+    <TextView
+        android:id="@+id/txtAmazon"
+        android:layout_width="179dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAliexpress" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

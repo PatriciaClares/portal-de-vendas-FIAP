@@ -11,54 +11,66 @@
         android:layout_width="139dp"
         android:layout_height="87dp"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="116dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/mercado_livre" />
-
-    <ImageView
-        android:id="@+id/ebay"
-        android:layout_width="139dp"
-        android:layout_height="87dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mercadolivre"
-        app:srcCompat="@drawable/ebay" />
 
     <ImageView
         android:id="@+id/wish"
         android:layout_width="139dp"
         android:layout_height="87dp"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ebay"
         app:srcCompat="@drawable/wish" />
-
-    <ImageView
-        android:id="@+id/kabum"
-        android:layout_width="139dp"
-        android:layout_height="87dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toEndOf="@+id/ebay"
-        app:layout_constraintTop_toBottomOf="@+id/amazon"
-        app:srcCompat="@drawable/kabum" />
 
     <ImageView
         android:id="@+id/aliexpress"
         android:layout_width="139dp"
         android:layout_height="87dp"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toEndOf="@+id/wish"
         app:layout_constraintTop_toBottomOf="@+id/kabum"
         app:srcCompat="@drawable/aliexpress" />
+
+    <ImageView
+        android:id="@+id/amazon"
+        android:layout_width="139dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toEndOf="@+id/mercadolivre"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/amazon" />
+
+    <ImageView
+        android:id="@+id/kabum"
+        android:layout_width="139dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toEndOf="@+id/ebay"
+        app:layout_constraintTop_toBottomOf="@+id/amazon"
+        app:srcCompat="@drawable/kabum" />
+
+    <ImageView
+        android:id="@+id/ebay"
+        android:layout_width="139dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mercadolivre"
+        app:srcCompat="@drawable/ebay" />
 
     <Button
         android:id="@+id/btSobre"
@@ -71,18 +83,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aliexpress" />
-
-    <ImageView
-        android:id="@+id/amazon"
-        android:layout_width="139dp"
-        android:layout_height="87dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="148dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toEndOf="@+id/mercadolivre"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/amazon" />
+        app:layout_constraintTop_toBottomOf="@+id/aliexpress"
+        app:layout_constraintVertical_bias="0.3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
