@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:parentActivityName=".MainActivity" android:name=".Sobre"></activity>
+        <activity android:parentActivityName=".MainActivity" android:name=".Estatistica"></activity>
         <activity android:parentActivityName=".MainActivity" android:name=".WebView" />
         <activity android:name=".MainActivity">
             <intent-filter>

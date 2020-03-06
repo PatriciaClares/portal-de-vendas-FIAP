@@ -15,16 +15,14 @@ class MainActivity : AppCompatActivity() {
 
         var dadosPersistidos = getSharedPreferences("dados", Context.MODE_PRIVATE )
 
-        var dadosMercadoLivre = dadosPersistidos.getInt("mercadoLivre",0)
-        var dadosAmazon = dadosPersistidos.getInt("amazon",0)
-        var dadosEbay = dadosPersistidos.getInt("ebay",0)
-        var dadosKabum = dadosPersistidos.getInt("kabum",0)
-        var dadosSubmarino = dadosPersistidos.getInt("submarino",0)
-        var dadosAliexpress = dadosPersistidos.getInt("aliexpress",0)
+        fun persistirDados(marketPlace : String){
+            dadosPersistidos
+                .edit()
+                .putInt(marketPlace, dadosPersistidos.getInt(marketPlace,0) +1).apply()
+        }
 
         mercadolivre.setOnClickListener {
-
-            dadosPersistidos.edit().putInt("mercadoLivre", dadosMercadoLivre+1).apply()
+            persistirDados("mercadoLivre")
             var intent = Intent(this, WebView::class.java)
             intent.putExtra("url", "https://www.mercadolivre.com.br/")
             startActivity(intent)
@@ -32,8 +30,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         amazon.setOnClickListener {
-
-            dadosPersistidos.edit().putInt("amazon", dadosAmazon+1).apply()
+            persistirDados("amazon")
             var intent = Intent(this, WebView::class.java)
             intent.putExtra("url", "https://www.amazon.com.br/")
             startActivity(intent)
@@ -41,8 +38,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         ebay.setOnClickListener {
-
-            dadosPersistidos.edit().putInt("ebay", dadosEbay+1).apply()
+            persistirDados("ebay")
             var intent = Intent(this, WebView::class.java)
             intent.putExtra("url", "https://www.ebay.com/")
             startActivity(intent)
@@ -50,8 +46,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         kabum.setOnClickListener {
-
-            dadosPersistidos.edit().putInt("kabum", dadosKabum+1).apply()
+            persistirDados("kabum")
             var intent = Intent(this, WebView::class.java)
             intent.putExtra("url", "https://www.kabum.com.br/")
             startActivity(intent)
@@ -59,8 +54,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         submarino.setOnClickListener {
-
-            dadosPersistidos.edit().putInt("submarino", dadosSubmarino+1).apply()
+            persistirDados("submarino")
             var intent = Intent(this, WebView::class.java)
             intent.putExtra("url", "https://www.submarino.com.br/")
             startActivity(intent)
@@ -68,8 +62,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         aliexpress.setOnClickListener {
-
-            dadosPersistidos.edit().putInt("aliexpress", dadosAliexpress+1).apply()
+            persistirDados("aliexpress")
             var intent = Intent(this, WebView::class.java)
             intent.putExtra("url", "https://pt.aliexpress.com/")
             startActivity(intent)
@@ -77,9 +70,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         btSobre.setOnClickListener{
-            var intent = Intent(this, Sobre::class.java)
+            var intent = Intent(this, Estatistica::class.java)
             startActivity(intent)
 
         }
+
     }
+
 }
