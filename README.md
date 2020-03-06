@@ -8,7 +8,7 @@ Projeto desenvolvido para uma avaliação de Hybrid Mobile.
     <li><a href="https://github.com/PatriciaClares"> Patricia Clares</a></li>
 </ul>
 
-## Técnologias
+## Tecnologias
 <ul>
     <li>Android Studio</li>
     <li>Kotlin</li>
